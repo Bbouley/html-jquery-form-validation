@@ -3,38 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>HTML &amp; JS Form Validation</title>
-    
+
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    
+
     <div class="container">
+
       <h1>Signup Form</h1>
+
       <form>
+
         <div class="row">
           <label for="preferredName">Preferred Name</label>
-          <input type="text">
+          <input type="text" name="preferredName" autofocus>
         </div>
 
         <div class="row">
           <label for="lastName">Last Name</label>
-          <input type="text">
+          <input type="text" name="lastName">
         </div>
 
         <div class="row">
           <label for="email">Email</label>
-          <input type="text">
+          <input type="email" name="email">
         </div>
 
         <div class="row">
           <label for="password">Password</label>
-          <input type="text">
+          <input type="password" name="password">
         </div>
 
-        <input type="submit">
+        <input type="submit" class="button-primary u-full-width">
+
       </form>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
