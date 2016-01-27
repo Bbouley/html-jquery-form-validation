@@ -4,6 +4,8 @@ $(document).on('ready', function() {
 
     $('form').on('submit', function(e) {
         e.preventDefault();
+        var values = $(this).serializeArray();
+        console.log(values)
     });
 
 
@@ -29,6 +31,7 @@ $(document).on('ready', function() {
             $emailInput.removeClass('warning');
         }
     })
+
 
 });
 
